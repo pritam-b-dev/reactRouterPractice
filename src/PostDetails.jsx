@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 const PostDetails = () => {
   const { id } = useParams();
@@ -31,6 +31,7 @@ const PostDetails = () => {
           <p>{post.body}</p>
         </div>
       )}
+      <Link to={"/conditionalrendering"}> Return to Lists</Link>
     </div>
   );
 };
