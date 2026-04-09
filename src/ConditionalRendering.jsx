@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const ConditionalRendering = () => {
   const [posts, setPosts] = useState([]);
@@ -22,9 +23,11 @@ const ConditionalRendering = () => {
           <h3>The posts are,</h3>
           <ul>
             {posts.map((post) => (
-              <li>
-                <strong>{post.title}</strong>
-                <p>{post.body}</p>
+              <li key={post.id}>
+                <Link to={`/conditionalrendering/${post.id}`}>
+                  <strong>{post.title}</strong>
+                  {/* <p>{post.body}</p> */}
+                </Link>
               </li>
             ))}
           </ul>
