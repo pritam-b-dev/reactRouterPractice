@@ -30,6 +30,9 @@ const Navbar = () => {
       <NavLink style={navStyle} to="/conditionalrendering" end>
         Conditional Render
       </NavLink>
+      <NavLink style={navStyle} to="/offerdisplaying" end>
+        Offer!
+      </NavLink>
     </nav>
   );
 };

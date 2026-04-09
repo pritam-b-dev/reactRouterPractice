@@ -6,6 +6,7 @@ import Navbar from "./Navbar";
 import { useState } from "react";
 import ConditionalRendering from "./ConditionalRendering";
 import PostDetails from "./PostDetails";
+import OfferDisplaying from "./OfferDisplaying";
 
 function App() {
   const [user, setUser] = useState("");
@@ -21,6 +22,7 @@ function App() {
           element={<ConditionalRendering />}
         />
         <Route path="/conditionalrendering/:id" element={<PostDetails />} />
+        <Route path="/offerdisplaying" element={<OfferDisplaying />} />
       </Routes>
     </>
   );
