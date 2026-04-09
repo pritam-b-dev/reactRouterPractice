@@ -27,6 +27,9 @@ const Navbar = () => {
       <NavLink style={navStyle} to="/contact" end>
         Contact
       </NavLink>
+      <NavLink style={navStyle} to="/forms" end>
+        Form
+      </NavLink>
       <NavLink style={navStyle} to="/conditionalrendering" end>
         Conditional Render
       </NavLink>

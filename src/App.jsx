@@ -7,6 +7,7 @@ import { useState } from "react";
 import ConditionalRendering from "./ConditionalRendering";
 import PostDetails from "./PostDetails";
 import OfferDisplaying from "./OfferDisplaying";
+import Forms from "./Forms";
 
 function App() {
   const [user, setUser] = useState("");
@@ -22,6 +23,7 @@ function App() {
           element={<ConditionalRendering />}
         />
         <Route path="/conditionalrendering/:id" element={<PostDetails />} />
+        <Route path="/forms" element={<Forms />} />
         <Route path="/offerdisplaying" element={<OfferDisplaying />} />
       </Routes>
     </>
