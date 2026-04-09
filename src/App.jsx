@@ -4,6 +4,7 @@ import Contact from "./Contact";
 import About from "./About";
 import Navbar from "./Navbar";
 import { useState } from "react";
+import ConditionalRendering from "./ConditionalRendering";
 
 function App() {
   const [user, setUser] = useState("");
@@ -14,6 +15,10 @@ function App() {
         <Route path="/" element={<Home user={user} setUser={setUser} />} />
         <Route path="/about" element={<About name="prit" user={user} />} />
         <Route path="/contact" element={<Contact />} />
+        <Route
+          path="/conditionalrendering"
+          element={<ConditionalRendering />}
+        />
       </Routes>
     </>
   );
